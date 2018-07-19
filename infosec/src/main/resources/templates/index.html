@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>InfoSec</title>
+    <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>这是第三方应用网站 InfoSec</h1>
+    </div>
+    <div style="margin-top: 100px" align="center">
+        <div>账号：<input type="text"/></div>
+        <br/>
+        <div>密码：<input type="password"/></div>
+        <br>
+        <button>登陆</button>
+        <button onclick="thirdLogin()">其他登陆</button>
+    </div>
+
+    <script>
+        function thirdLogin() {
+            window.location.href = "http://10.8.0.6:8081/client/requestCode"
+        }
+    </script>
+</body>
+
+</html>
